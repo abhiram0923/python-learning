@@ -1,5 +1,7 @@
 import random
 
+#Defining a class called Board. This would be initialize a 3x3 two dimensional array
+#mimicing a tic tac toe game.
 class Board:
   def __init__(self):
     self.board = [['_' for _ in range(3)] for _ in range(3)]
@@ -40,7 +42,8 @@ class Board:
       return self.board[0][2]
     return None
 
-
+#This is class that defines a player. 
+#We also defined a method called get_move, which would prompt the user to enter a row/col selection.
 class Player:
   def __init__(self, name):
     self.name = name
